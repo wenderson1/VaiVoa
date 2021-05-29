@@ -29,7 +29,6 @@ namespace VaiVoa
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
-            //services.AddScoped<DataContext, DataContext>();
             services.AddControllers();
 
         }
